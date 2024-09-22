@@ -26,19 +26,7 @@ class WebhookRequest extends FormRequest
 
     public function rules(): array
     {
-        return [
-            'TerminalKey' => 'required|string',
-            'OrderId' => 'required|string',
-            'Success' => 'required|boolean',
-            'Status' => 'required|string',
-            'PaymentId' => 'required|sometimes',
-            'ErrorCode' => 'required|sometimes',
-            'Amount' => 'required|sometimes',
-            'CardId' => 'required|sometimes',
-            'Pan' => 'required|string',
-            'ExpData' => 'required|sometimes',
-            'Token' => 'required|string',
-        ];
+        return [];
     }
 
     /**
