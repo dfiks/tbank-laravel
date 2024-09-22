@@ -55,20 +55,20 @@ class TBankApi
     /**
      * Получить текущую конфигурацию магазина.
      *
-     * @return ?ShopConfiguration
+     * @return ShopConfiguration
      */
-    public static function getShopConfiguration(): ?ShopConfiguration
+    public static function getShopConfiguration(): ShopConfiguration
     {
-        return self::$shopConfiguration;
+        return self::$shopConfiguration ?? app(ShopConfiguration::class);
     }
 
     /**
      * Получить текущую общую конфигурацию.
      *
-     * @return ?GeneralConfiguration
+     * @return GeneralConfiguration
      */
-    public static function getGeneralConfiguration(): ?GeneralConfiguration
+    public static function getGeneralConfiguration(): GeneralConfiguration
     {
-        return self::$generalConfiguration;
+        return self::$generalConfiguration ?? app(GeneralConfiguration::class);
     }
 }
