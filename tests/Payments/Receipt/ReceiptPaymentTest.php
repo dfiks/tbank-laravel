@@ -16,6 +16,15 @@ use PHPUnit\Framework\Attributes\DataProvider;
 
 class ReceiptPaymentTest extends TestCase
 {
+    /**
+     * @dataProvider receiptDataProvider
+     *
+     * @param  FfdVersionType $ffdVersion
+     * @param  array          $items
+     * @param  array          $additionalFields
+     * @param  array          $expected
+     * @return void
+     */
     #[DataProvider('receiptDataProvider')]
     public function testReceiptBuild(FfdVersionType $ffdVersion, array $items, array $additionalFields, array $expected): void
     {

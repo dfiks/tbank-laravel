@@ -15,6 +15,8 @@ class TBankApiInitTest extends TestCase
 {
     /**
      * Тест успешной инициализации API с данными провайдера.
+     *
+     * @dataProvider configurationProvider
      */
     #[DataProvider('configurationProvider')]
     public function testApiInitWithShopName(array $configData, ?string $shopName, string $expectedShopName): void
