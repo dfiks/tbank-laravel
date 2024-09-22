@@ -2,7 +2,7 @@
     "name": "dfiks/tbank-laravel",
     "description": "TBank API Laravel Package",
     "type": "library",
-    "version": "v0.0.1",
+    "version": "dev-v0.0.1",
     "require": {
         "orchestra/testbench-core": "^9.4",
         "laravel/framework": "^11.23"
