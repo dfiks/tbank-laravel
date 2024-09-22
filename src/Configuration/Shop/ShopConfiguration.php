@@ -54,8 +54,8 @@ class ShopConfiguration extends BaseConfiguration
             'terminals.production.terminal_id' => 'required|string',
             'terminals.production.password' => 'required|string',
             'terminals.production.http_notification' => 'nullable|sometimes',
-            'terminals.production.success_url' => 'nullable|url',
-            'terminals.production.error_url' => 'nullable|url',
+            'terminals.production.success_url' => 'nullable|sometimes',
+            'terminals.production.error_url' => 'nullable|sometimes',
         ];
     }
 }
